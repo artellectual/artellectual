@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "main": "src/index.html",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "NODE_ENV=production parcel build src/index.html"
+  },
   "devDependencies": {
     "@types/react": "^16.8.8",
     "@types/react-dom": "^16.8.2",
     "parcel-bundler": "^1.12.1",
+    "parcel-plugin-compress": "^1.0.7",
     "sass": "^1.17.2",
     "typescript": "^3.3.3333"
   },
@@ -19,5 +24,26 @@
     "react-dom": "^16.8.4",
     "react-router5": "^7.1.0",
     "router5": "^7.0.2"
+  },
+  "compress": {
+    "test": ".",
+    "gzip": {
+      "enabled": true,
+      "numiterations": 15,
+      "blocksplitting": true,
+      "blocksplittinglast": false,
+      "blocksplittingmax": 15
+    },
+    "brotli": {
+      "enabled": true,
+      "mode": 0,
+      "quality": 11,
+      "lgwin": 22,
+      "lgblock": 0,
+      "enable_dictionary": true,
+      "enable_transforms": false,
+      "greedy_block_split": false,
+      "enable_context_modeling": false
+    }
   }
 }
