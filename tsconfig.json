@@ -7,9 +7,6 @@
     "strict": true,
     "jsx": "react"
   },
-  "include":[
-    "app/**/*"
-  ],
   "exclude": [
     "node_modules",
     "dist"

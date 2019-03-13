@@ -1,11 +1,11 @@
 {
   "name": "artellectual",
   "version": "1.0.0",
-  "main": "app/index.html",
+  "main": "index.html",
   "license": "MIT",
   "scripts": {
-    "start": "parcel app/index.html",
-    "build": "NODE_ENV=production parcel build app/index.html"
+    "start": "parcel index.html",
+    "build": "NODE_ENV=production parcel build index.html"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
