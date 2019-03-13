@@ -13,10 +13,12 @@
     "parcel-bundler": "^1.12.1",
     "parcel-plugin-compress": "^1.0.7",
     "sass": "^1.17.2",
+    "tailwindcss": "^0.7.4",
     "typescript": "^3.3.3333"
   },
   "dependencies": {
     "autoprefixer": "^9.4.10",
+    "classnames": "^2.2.6",
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",
     "postcss-modules": "^1.4.1",
