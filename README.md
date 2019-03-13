@@ -11,4 +11,4 @@ Artellectual.com website re-configured with Parcel
 
 ## TODO
 
-[ ] Tailwind
+- [ ] Configure Tailwind
