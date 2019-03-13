@@ -8,3 +8,7 @@ Artellectual.com website re-configured with Parcel
 * Router5
 * MobX
 * Sass
+
+## TODO
+
+[ ] Tailwind
