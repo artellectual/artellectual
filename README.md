@@ -2,12 +2,14 @@
 
 Artellectual.com website re-configured with Parcel
 
-* Parcel
-* TypeScript
-* React
-* Router5
-* MobX
-* Sass
+## Configured
+
+- [x] Parcel
+- [x] TypeScript
+- [x] React
+- [x] Router5
+- [x] MobX
+- [x] Sass
 
 ## TODO
 
