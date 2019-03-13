@@ -8,8 +8,11 @@
     "build": "NODE_ENV=production parcel build src/index.html"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.4",
     "@types/react": "^16.8.8",
     "@types/react-dom": "^16.8.2",
+    "autoprefixer": "^9.4.10",
+    "babel-plugin-lodash": "^3.3.4",
     "parcel-bundler": "^1.12.1",
     "parcel-plugin-compress": "^1.0.7",
     "sass": "^1.17.2",
@@ -18,7 +21,6 @@
     "typescript": "^3.3.3333"
   },
   "dependencies": {
-    "autoprefixer": "^9.4.10",
     "classnames": "^2.2.6",
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",
@@ -28,6 +30,11 @@
     "react-router5": "^7.1.0",
     "router5": "^7.0.2",
     "tailwind": "^3.1.0"
+  },
+  "babel": {
+    "plugins": [
+      "lodash"
+    ]
   },
   "compress": {
     "test": ".",
