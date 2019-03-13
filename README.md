@@ -2,7 +2,7 @@
 
 Artellectual.com website re-configured with Parcel
 
-## Configured
+## Configured With
 
 - [x] Parcel
 - [x] TypeScript
@@ -10,7 +10,4 @@ Artellectual.com website re-configured with Parcel
 - [x] Router5
 - [x] MobX
 - [x] Sass
-
-## TODO
-
-- [ ] Configure Tailwind
+- [x] Configure Tailwind
