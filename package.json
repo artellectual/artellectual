@@ -13,6 +13,7 @@
     "parcel-bundler": "^1.12.1",
     "parcel-plugin-compress": "^1.0.7",
     "sass": "^1.17.2",
+    "stylelint-config-recommended": "^2.1.0",
     "tailwindcss": "^0.7.4",
     "typescript": "^3.3.3333"
   },
@@ -25,7 +26,8 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router5": "^7.1.0",
-    "router5": "^7.0.2"
+    "router5": "^7.0.2",
+    "tailwind": "^3.1.0"
   },
   "compress": {
     "test": ".",
