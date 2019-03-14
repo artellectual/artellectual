@@ -10,4 +10,5 @@ Artellectual.com website re-configured with Parcel
 - [x] Router5
 - [x] MobX
 - [x] Sass
+- [x] i18n
 - [x] Configure Tailwind
