@@ -5,6 +5,7 @@
     "module": "commonjs",
     "sourceMap": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "jsx": "react"
   },
