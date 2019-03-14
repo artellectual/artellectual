@@ -7,10 +7,8 @@ i18n
   .use(initReactI18next)
   .init({
     resources: locales,
-    debug: true,
     lng: "en",
-    fallbackLng: "en",
-    saveMissing: true
+    fallbackLng: "en"
   })
 
 export default i18n
