@@ -11,4 +11,4 @@ Artellectual.com website re-configured with Parcel
 - [x] MobX
 - [x] Sass
 - [x] i18n
-- [x] Configure Tailwind
+- [x] Tailwind
