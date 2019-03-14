@@ -5,7 +5,6 @@ import { RouterProvider } from 'react-router5'
 import createRouter from './router'
 
 import { Application } from './layout'
-import { RouteProviderProps } from 'react-router5/types/RouterProvider';
 
 const router = createRouter({
   listener: true,
