@@ -28,8 +28,11 @@
     "postcss-modules": "^1.4.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-router5": "^7.1.0",
     "router5": "^7.0.2",
+    "react-router5": "^7.1.0",
+    "router5-plugin-browser": "^7.0.2",
+    "router5-plugin-listeners": "^7.0.2",
+    "router5-plugin-logger": "^7.0.2",
     "tailwind": "^3.1.0"
   },
   "babel": {
