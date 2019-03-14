@@ -2,7 +2,7 @@ import * as React from 'react'
 import { lazy, Suspense } from 'react'
 
 import { constants } from 'router5'
-import { RouteNodeState } from 'route-node';
+import { RouteNodeState } from 'route-node'
 
 interface PagesIndex {
   [key: string]: React.LazyExoticComponent<any>

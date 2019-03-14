@@ -7,9 +7,9 @@ import browserPlugin from 'router5-plugin-browser'
 
 import routes from './routes'
 
-const configureRouter = (options = {
-  listener: false, logger: false
-}): Router => {
+const configureRouter: (options?: {listener: boolean, logger: boolean}) => Router = 
+  (options = {listener: false, logger: false}) => {
+
   const router = createRouter(routes, {
     allowNotFound: true,
     autoCleanUp: true
@@ -23,7 +23,7 @@ const configureRouter = (options = {
   if (options.logger)
     router.usePlugin(loggerPlugin)
 
-  return router as Router
+  return router
 }
 
 export default configureRouter
