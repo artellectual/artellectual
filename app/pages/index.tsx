@@ -2,16 +2,17 @@ import * as React from 'react'
 import { lazy, Suspense } from 'react'
 
 import { constants } from 'router5'
+import { RouteNodeState } from 'route-node';
 
-interface PageIndex {
+interface PagesIndex {
   [key: string]: React.LazyExoticComponent<any>
 }
 
-const pages: PageIndex = {
+const pages: PagesIndex = {
   'root': lazy(() => import('./root'))
 }
 
-export default (props: { route: any }) => {
+export default (props: { route: RouteNodeState }) => {
   const { route } = props
 
   let page = route.name.split('.')[0]
@@ -24,7 +25,7 @@ export default (props: { route: any }) => {
   
   return (
     <Suspense fallback='Loading...'>
-      <Page />
+      <Page {...props} />
     </Suspense>
   )
 }
