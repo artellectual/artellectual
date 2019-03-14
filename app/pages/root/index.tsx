@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { RouteNode } from 'react-router5'
 import c from 'classnames'
 
 import * as styles from './index.sass'
@@ -20,8 +19,4 @@ class Root extends React.PureComponent<RootProps> {
   }
 }
 
-export default (props: { route: RouteNodeState }) => (
-  <RouteNode nodeName="">
-    {({route}) => <Root route={route} {...props} />}
-  </RouteNode>
-)
+export default Root

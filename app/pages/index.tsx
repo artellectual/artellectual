@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { RouteNode } from 'react-router5'
 import { lazy, Suspense } from 'react'
 
 import { constants } from 'router5'
@@ -12,7 +13,7 @@ const pages: PagesIndex = {
   'root': lazy(() => import('./root'))
 }
 
-export default (props: { route: RouteNodeState }) => {
+const PageComponent = (props: { route: RouteNodeState }) => {
   const { route } = props
 
   let page = route.name.split('.')[0]
@@ -29,3 +30,9 @@ export default (props: { route: RouteNodeState }) => {
     </Suspense>
   )
 }
+
+export default (props: { route: RouteNodeState }) => (
+  <RouteNode nodeName="">
+    {({route}) => <PageComponent route={route} {...props} />}
+  </RouteNode>
+)
