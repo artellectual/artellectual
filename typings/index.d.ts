@@ -3,4 +3,9 @@ declare module '*.sass' {
   export = content;
 }
 
+declare module "*.svg" {
+  const content: any;
+  export default content;
+}
+
 declare module 'classnames'
