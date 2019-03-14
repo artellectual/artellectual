@@ -3,7 +3,6 @@ import { routeContext } from 'react-router5'
 
 import Pages from '../pages'
 
-
 class Application extends React.PureComponent {
   static contextType = routeContext
 
