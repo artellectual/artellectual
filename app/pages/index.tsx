@@ -10,7 +10,8 @@ interface PagesIndex {
 }
 
 const pages: PagesIndex = {
-  'root': lazy(() => import('./root'))
+  'root': lazy(() => import('./root')),
+  'not_found': lazy(() => import('./not_found'))
 }
 
 const PageComponent = (props: { route: RouteNodeState }) => {
@@ -19,7 +20,7 @@ const PageComponent = (props: { route: RouteNodeState }) => {
   let page = route.name.split('.')[0]
 
   if (page === constants.UNKNOWN_ROUTE) {
-    page = '404'
+    page = 'not_found'
   }
 
   const Page = pages[page]

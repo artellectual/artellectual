@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { FunctionComponent } from 'react'
 import { useTranslation } from 'react-i18next'
-
 import c from 'classnames'
 
 import logo from './logo.svg'
