@@ -18,7 +18,7 @@ const Footer: FunctionComponent = () => {
           <img src={logo} alt={t('application.footer.logo')} width='64' />
           <address className='mt-5 text-white leading-normal'>
             <p className='font-semibold text-md'>{t('application.footer.company_name')}</p>
-            {addressLines.map(line => <p>{line}</p>)}
+            {addressLines.map((line, index) => <p key={`address_line_${index}`}>{line}</p>)}
           </address>
           <p className='leading-normal text-white mt-5'><i className='fas fa-mobile mr-3' /> <span>+(66) 86-974-4700</span></p>
         </div>

@@ -10,13 +10,13 @@ export interface DisciplineProps {
   active: boolean
   heading: string
   icon: string
-  key: string
+  slug: string
   description: string
   technologies: Array<TechnologyProps>
 }
 
 const Discipline: FunctionComponent<DisciplineProps> = props => {
-  const { active, heading, technologies, description } = props
+  const { active, slug, heading, technologies, description } = props
 
   if (!active) return null
 
@@ -29,8 +29,8 @@ const Discipline: FunctionComponent<DisciplineProps> = props => {
     >
       <h5 className='text-lg text-purple-dark'>{heading}</h5>
       <p className='mt-5 mb-5 text-black leading-normal'>{description}</p>
-      {technologies.map(technology => (
-        <Technology {...technology} />
+      {technologies.map((technology, index) => (
+        <Technology key={`technology_${slug}_${index}`} {...technology} />
       ))}
     </div>
   )

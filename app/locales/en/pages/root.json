@@ -67,7 +67,7 @@
     "description": "We have the unique experience of product development and technical consulting under one roof. This means we can help you with making the right technical choices to ensure that you succeed in the market.",
     "disciplines": [
       {
-        "key": "application_development",
+        "slug": "application_development",
         "heading": "Application Development",
         "icon": "fas fa-box-open",
         "description": "Some technologies we love for application development",
@@ -87,7 +87,7 @@
         ]
       },
       {
-        "key": "devops_infrastructure",
+        "slug": "devops_infrastructure",
         "heading": "DevOps & Infrastructure",
         "icon": "fas fa-cogs",
         "description": "Great DevOps is key for building businesses that iterate quickly and putting agile development into practice.",
@@ -107,7 +107,7 @@
         ]
       },
       {
-        "key": "application_scalability",
+        "slug": "application_scalability",
         "heading": "Application Scalability",
         "icon": "fas fa-boxes",
         "description": "So now that you are growing, can your application handle the amount of users? Or is it struggling. Your application should not stop the growth of your business.",
@@ -127,7 +127,7 @@
         ]
       },
       {
-        "key": "project_management",
+        "slug": "project_management",
         "heading": "Project Management",
         "icon": "fas fa-calendar-check",
         "description": "Iterating through a product and getting it to the point where it generates revenue and maintains great retention should be managed like a well oiled machine.",

@@ -25,17 +25,17 @@ const Technologies: FunctionComponent = () => {
       <div className='flex flex-row ml-3'>
         <div>
           {disciplines.map(discipline => (
-            <div
+            <div key={`discipline_button_${discipline.slug}`}
               className={c('bg-white mb-2 shadow rounded border border-solid', {
-                ['border-purple-lighter']: active !== discipline.key,
-                ['bg-purple-dark']: active === discipline.key
+                ['border-purple-lighter']: active !== discipline.slug,
+                ['bg-purple-dark']: active === discipline.slug
               })}
             >
               <button
-                onClick={e => changeTab(e, discipline.key)}
+                onClick={e => changeTab(e, discipline.slug)}
                 className={c('p-5', {
-                  ['text-purple-darker']: active !== discipline.key,
-                  ['text-white']: active === discipline.key
+                  ['text-purple-darker']: active !== discipline.slug,
+                  ['text-white']: active === discipline.slug
                 })}
               >
                 <i className={c(discipline.icon, 'mr-0 sm:mr-0 md:mr-0 lg:mr-3 xl:mr-3')} />
@@ -45,8 +45,9 @@ const Technologies: FunctionComponent = () => {
           ))}
         </div>
         <div className='flex-1 mr-3'>
-          {disciplines.map(discipline => (
-            <Discipline active={active === discipline.key} {...discipline} />
+          {disciplines.map((discipline) => (
+            <Discipline key={`disciplinet_${discipline.slug}`} 
+                  active={active === discipline.slug} {...discipline} />
           ))}
         </div>
       </div>
