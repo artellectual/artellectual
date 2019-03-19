@@ -7,21 +7,20 @@ import browserPlugin from 'router5-plugin-browser'
 
 import routes from './routes'
 
-const configureRouter: (options?: {listener: boolean, logger: boolean}) => Router = 
-  (options = {listener: false, logger: false}) => {
-
+const configureRouter: (options?: {
+  listener: boolean
+  logger: boolean
+}) => Router = (options = { listener: false, logger: false }) => {
   const router = createRouter(routes, {
     allowNotFound: true,
     autoCleanUp: true
   })
-    
+
   router.usePlugin(browserPlugin())
 
-  if (options.listener)
-    router.usePlugin(listenersPlugin())
+  if (options.listener) router.usePlugin(listenersPlugin())
 
-  if (options.logger)
-    router.usePlugin(loggerPlugin)
+  if (options.logger) router.usePlugin(loggerPlugin)
 
   return router
 }

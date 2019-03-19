@@ -1,3 +1,168 @@
 {
-  "slogan": "something awesome"
+  "slogan": {
+    "we": "We",
+    "build_things": "build things",
+    "and": "and",
+    "provide_consultation": "provide consultation",
+    "for_people": ", for people",
+    "who_make_things": "who make things",
+    "on_the_web": "on the web."
+  },
+  "full_slogan": "We build things and provide consultation, for people who make things on the web.",
+  "products": [
+    {
+      "name": "Codemy.net",
+      "slug": "codemy",
+      "link": "https://www.codemy.net",
+      "description": "Codemy.net is an online coding school that helps people upgrade their skillset or get into programming.",
+      "cover_picture": "codemy"
+    },
+    { 
+      "name": "Upmaru",
+      "slug": "upmaru",
+      "link": "#",
+      "description": "Upmaru is a product for content creators, it gives control back to content creators.",
+      "cover_picture": "tba"
+    },
+    {
+      "name": "Artello",
+      "slug": "artello",
+      "link": "#",
+      "description": "Artello for web developers, it empowers developers to build productive infrastructure for their companies.",
+      "cover_picture": "tba"
+    }
+  ],
+  "product_development": {
+    "heading": "Product Development Training",
+    "description": "Our experience has helped companies launched, establish a feedback loop, built teams and generate revenue, from their products. We guide companies to build products their users love.",
+    "topics": [
+      {
+        "id": "launch",
+        "icon": "fas fa-space-shuttle fa-2x",
+        "heading": "Have you Launched?",
+        "description": "Most products never make it out the door, due to lack of understanding of product the product lifecycle. Knowing when you have enough features to launch can make all the difference."
+      },
+      {
+        "id": "feedback",
+        "icon": "fas fa-infinity fa-2x",
+        "heading": "Feedback Loop",
+        "description": "Establishing a feedback loop is key, to your product and business. Understanding who your customers are and how they're using your product is key to the survival of a product."
+      },
+      {
+        "id": "market-fit",
+        "icon": "fas fa-hand-holding-usd fa-2x",
+        "heading": "Market Fit",
+        "description": "Do you have product market fit? Or are you still finding it? How do you know when you have product market fit? Should you pivot or stay on course?"
+      },
+      {
+        "id": "culture",
+        "icon": "fas fa-smile-beam fa-2x",
+        "heading": "Great Culture Grows Businesses",
+        "description": "Does your company have a hard time attracting talent? How do you improve the internal culture? Do you have a hiring pipeline? Establishing a great culture is the key to growing a team."
+      }
+    ]
+  },
+  "technical_consulting":{
+    "heading": "Technical Consulting",
+    "description": "We have the unique experience of product development and technical consulting under one roof. This means we can help you with making the right technical choices to ensure that you succeed in the market.",
+    "disciplines": [
+      {
+        "key": "application_development",
+        "heading": "Application Development",
+        "icon": "fas fa-box-open",
+        "description": "Some technologies we love for application development",
+        "technologies": [
+          {
+            "name": "Ruby / Rails",
+            "description": "Ruby on Rails is still one of the greatest frameworks for getting started building businesses with. The wide array of existing stable libraries will allow businesses to launch faster."
+          },
+          {
+            "name": "Elixir / Phoenix",
+            "description": "If your business requires lots of concurrent connection, and robust networking stack, elixir and phoenix is a great choice."
+          },
+          {
+            "name": "Javascript / React",
+            "description": "Need something with a beautiful UI? React and Javascript is a great stack. Leverage the huge ecosystem to build user-interface that's cross platform and friendly to your users."
+          }
+        ]
+      },
+      {
+        "key": "devops_infrastructure",
+        "heading": "DevOps & Infrastructure",
+        "icon": "fas fa-cogs",
+        "description": "Great DevOps is key for building businesses that iterate quickly and putting agile development into practice.",
+        "technologies": [
+          {
+            "name": "Alpine Linux",
+            "description": "We deploy our applications using alpine linux due to it's small size and robust package management system"
+          },
+          {
+            "name": "LXD",
+            "description": "A container engine that's simple but powerful. Allows us to orchestrate and deploy our apps quickly."
+          },
+          {
+            "name": "Terraform",
+            "description": "Amazing tool for orchestrating turning infrastructure into code. With terraform scripts you can orchestrate anything from an infrastructure level all the way up to the application stack."
+          }
+        ]
+      },
+      {
+        "key": "application_scalability",
+        "heading": "Application Scalability",
+        "icon": "fas fa-boxes",
+        "description": "So now that you are growing, can your application handle the amount of users? Or is it struggling. Your application should not stop the growth of your business.",
+        "technologies": [
+          {
+            "name": "Response Time Optimization",
+            "description": "Getting your application to respond quickly is one of the key factors to scalability, if you have a lot of users, and your server can respond quickly it can serve more users. Simple."
+          },
+          {
+            "name": "Stateless Application",
+            "description": "Once you've optimized every last drop out of your application, it will be important to make sure that you application is stateless so you can scale out horizontally to handle more load."
+          },
+          {
+            "name": "Architectural Optimization",
+            "description": "Is your architecture overly complex? Can it be simplified? A simpler architecture is easier to scale. We'll take a look at what you have an suggest ideas on how tou can simplify and optimize the stack."
+          }
+        ]
+      },
+      {
+        "key": "project_management",
+        "heading": "Project Management",
+        "icon": "fas fa-calendar-check",
+        "description": "Iterating through a product and getting it to the point where it generates revenue and maintains great retention should be managed like a well oiled machine.",
+        "technologies": [
+          {
+            "name": "Iterative Workflow",
+            "description": "Having a workflow that is robust and easy for the team to follow is the key to a well oiled iterative cycle or sprints."
+          },
+          {
+            "name": "Handling Technical Debt",
+            "description": "Technical Debt can destroy your business, how do you know when you have too much debt? How can you deal with it while still move forward."
+          },
+          {
+            "name": "Business and Technical Exellence",
+            "description": "Having balance between business and technical excellence is the key to a long lasting technical product. How do you balance the time between achiving business excellence and technical excellence?"
+          }
+        ]
+      }
+    ]
+  },
+  "continuous_improvement": {
+    "heading": "We're dedicated to Continuous Improvement",
+    "description": "Getting everything done all at once is impossible, however with the right process, and the right know-how getting meaningful work done, overtime can achieve exceptional results.",
+    "action": "Get in Touch, and Learn More"
+  },
+  "contact_form": {
+    "your_name": "Your Name",
+    "subject": "Subject",
+    "how_can_we_help": "How can we help?",
+    "message": "Message",
+    "your_message": "Your Message"
+  },
+  "company_name": "Artellectual Co., Ltd.",
+  "mailing_address": [
+    "1106 Sukhumvit Rd, Khwaeng Phra Khanong",
+    "Khet Khlong Toei, Bangkok, 10110"
+  ]
 }

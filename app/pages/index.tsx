@@ -1,30 +1,33 @@
 import * as React from 'react'
+import { FunctionComponent } from 'react'
 import { RouteNode } from 'react-router5'
 import { lazy, Suspense } from 'react'
 
-import { constants } from 'router5'
-import { RouteNodeState } from 'route-node'
+import { constants, State } from 'router5'
+import { RouteProps } from 'typings/route'
 
 interface PagesIndex {
   [key: string]: React.LazyExoticComponent<any>
 }
 
 const pages: PagesIndex = {
-  'root': lazy(() => import('./root')),
-  'not_found': lazy(() => import('./not_found'))
+  root: lazy(() => import('./root')),
+  not_found: lazy(() => import('./not_found'))
 }
 
-const PageComponent = (props: { route: RouteNodeState }) => {
+const PageComponent: FunctionComponent<RouteProps> = (props: {
+  route: State
+}) => {
   const { route } = props
 
-  let page = route.name.split('.')[0]
+  let [page] = route.name.split('.')
 
   if (page === constants.UNKNOWN_ROUTE) {
     page = 'not_found'
   }
 
   const Page = pages[page]
-  
+
   return (
     <Suspense fallback='Loading...'>
       <Page {...props} />
@@ -32,8 +35,8 @@ const PageComponent = (props: { route: RouteNodeState }) => {
   )
 }
 
-export default (props: { route: RouteNodeState }) => (
-  <RouteNode nodeName="">
-    {({route}) => <PageComponent route={route} {...props} />}
+export default (props: { route: State }) => (
+  <RouteNode nodeName=''>
+    {({ route }) => <PageComponent route={route} {...props} />}
   </RouteNode>
 )
