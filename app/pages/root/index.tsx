@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { useTranslation } from 'react-i18next'
 import c from 'classnames'
 
-import logo from './logo.svg'
+import logo from '~/assets/logo.svg'
 
 import * as styles from './index.sass'
 import { RouteProps } from 'typings/route'
@@ -16,11 +16,9 @@ import Technologies from './technologies'
 const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
   const { t } = useTranslation('pages')
 
-  const highlight = c(styles.highlight, 'text-black', 'p-1', 'rounded-sm')
-
   return (
     <>
-      <section id='hero' className={styles.purple}>
+      <section id='hero' className='bg-transparent'>
         <div className='container mx-auto pt-20 text-center'>
           <img
             src={logo}
@@ -30,15 +28,15 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
           />
           <h1 className='text-white text-4xl text-center mx-auto font-semibold leading-normal max-w-xl'>
             <span>{t('root.slogan.we')}</span>&nbsp;
-            <span className={highlight}>{t('root.slogan.build_things')}</span>
+            <span className='bg-yellow text-black p-1 rounded-sm'>{t('root.slogan.build_things')}</span>
             &nbsp;
             <span>{t('root.slogan.and')}</span>&nbsp;
-            <span className={highlight}>
+            <span className='bg-yellow text-black p-1 rounded-sm'>
               {t('root.slogan.provide_consultation')}
             </span>
             <span>{t('root.slogan.for_people')}</span>
             <br />
-            <span className={highlight}>
+            <span className='bg-yellow text-black p-1 rounded-sm'>
               {t('root.slogan.who_make_things')}
             </span>
             &nbsp;
@@ -75,7 +73,7 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
         </div>
         <Technologies />
       </section>
-      <section id='contact' className='pt-20 pb-20'>
+      <section id='contact' className='pt-20 pb-20 bg-white'>
         <div className='container mx-auto'>
           <h2 className='text-center text-3xl text-purple-darker font-normal mb-5'>
             {t('root.continuous_improvement.heading')}
@@ -88,12 +86,12 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
           </p>
           <div className='mt-20'>
             <form
-              className='w-full max-w-md mx-auto'
+              className='w-full max-w-sm mx-auto sm:max-w-sm md:max-w-md lg:max-w-md xl:max-w-md'
               method='post'
               data-netlify='true'
             >
-              <div className='flex flex-wrap -mx-3 mb-6'>
-                <div className='w-full px-3'>
+              <div className='flex flex-wrap mb-6'>
+                <div className='w-full'>
                   <label
                     className='block uppercase tracking-wide text-purple-light text-xs font-bold mb-2'
                     htmlFor='name'
@@ -109,8 +107,8 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
                   />
                 </div>
               </div>
-              <div className='flex flex-wrap -mx-3 mb-6'>
-                <div className='w-full px-3'>
+              <div className='flex flex-wrap mb-6'>
+                <div className='w-full'>
                   <label
                     className='block uppercase tracking-wide text-purple-light text-xs font-bold mb-2'
                     htmlFor='name'
@@ -126,8 +124,8 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
                   />
                 </div>
               </div>
-              <div className='flex flex-wrap -mx-3 mb-6'>
-                <div className='w-full px-3'>
+              <div className='flex flex-wrap mb-6'>
+                <div className='w-full'>
                   <label
                     className='block uppercase tracking-wide text-purple-light text-xs font-bold mb-2'
                     htmlFor='name'
