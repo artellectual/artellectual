@@ -123,6 +123,25 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
                 <div className='w-full'>
                   <label
                     className='block uppercase tracking-wide text-purple-light text-xs font-bold mb-2'
+                    htmlFor='email'
+                  >
+                    {t('root.contact_form.email')}
+                  </label>
+                  <input
+                    className='appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey'
+                    id='name'
+                    name='email'
+                    type='email'
+                    size={30}
+                    required
+                    placeholder={t('root.contact_form.email')}
+                  />
+                </div>
+              </div>
+              <div className='flex flex-wrap mb-6'>
+                <div className='w-full'>
+                  <label
+                    className='block uppercase tracking-wide text-purple-light text-xs font-bold mb-2'
                     htmlFor='name'
                   >
                     {t('root.contact_form.subject')}
@@ -140,7 +159,7 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
                 <div className='w-full'>
                   <label
                     className='block uppercase tracking-wide text-purple-light text-xs font-bold mb-2'
-                    htmlFor='name'
+                    htmlFor='message'
                   >
                     {t('root.contact_form.message')}
                   </label>

@@ -157,6 +157,7 @@
   },
   "contact_form": {
     "your_name": "Your Name",
+    "email": "Email",
     "subject": "Subject",
     "how_can_we_help": "How can we help?",
     "message": "Message",
