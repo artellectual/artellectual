@@ -103,6 +103,7 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
                   <input
                     className='appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey'
                     id='name'
+                    name='name'
                     type='text'
                     placeholder={t('root.contact_form.your_name')}
                   />
@@ -119,6 +120,7 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
                   <input
                     className='appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey'
                     id='subject'
+                    name='subject'
                     type='text'
                     placeholder={t('root.contact_form.how_can_we_help')}
                   />
@@ -135,6 +137,7 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
                   <textarea
                     className='appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey'
                     id='message'
+                    name='message'
                     placeholder={t('root.contact_form.your_message')}
                     rows={10}
                   />
