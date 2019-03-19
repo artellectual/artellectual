@@ -87,7 +87,7 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
             {t('root.continuous_improvement.description')}
           </p>
           <div className='mt-20'>
-            <form className='w-full max-w-md mx-auto' netlify>
+            <form className='w-full max-w-md mx-auto' data-netlify="true">
               <div className='flex flex-wrap -mx-3 mb-6'>
                 <div className='w-full px-3'>
                   <label
