@@ -22,8 +22,8 @@ const Technologies: FunctionComponent = () => {
 
   return (
     <section className='container mx-auto'>
-      <div className='flex'>
-        <div className='w-1/4'>
+      <div className='flex flex-row ml-3'>
+        <div>
           {disciplines.map(discipline => (
             <div
               className={c('bg-white mb-2 shadow rounded border border-solid', {
@@ -38,13 +38,13 @@ const Technologies: FunctionComponent = () => {
                   ['text-white']: active === discipline.key
                 })}
               >
-                <i className={c(discipline.icon, 'mr-3')} />
-                <span>{discipline.heading}</span>
+                <i className={c(discipline.icon, 'mr-0 sm:mr-0 md:mr-0 lg:mr-3 xl:mr-3')} />
+                <span className='hidden sm:hidden md:inline lg:inline xl:inline'>{discipline.heading}</span>
               </button>
             </div>
           ))}
         </div>
-        <div className='w-3/4'>
+        <div className='flex-1 mr-3'>
           {disciplines.map(discipline => (
             <Discipline active={active === discipline.key} {...discipline} />
           ))}
