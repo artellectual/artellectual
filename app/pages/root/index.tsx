@@ -1,9 +1,11 @@
 import * as React from 'react'
 import { FunctionComponent } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet'
 import c from 'classnames'
 
 import logo from '~/assets/logo.svg'
+import favicon from '~/assets/favicon.png'
 
 import * as styles from './index.sass'
 import { RouteProps } from 'typings/route'
@@ -18,6 +20,16 @@ const Root: FunctionComponent<RouteProps> = (_props: { route: State }) => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>{t('root.title')}</title>
+        <link rel='canonical' href='https://www.artellectual.com' />
+        <link rel='shortcut icon' type='image/png' href={favicon} />
+        <meta
+          name='description'
+          content={t('root.description')}
+        />
+      </Helmet>
       <section id='hero' className='bg-transparent'>
         <div className='container mx-auto pt-20 text-center'>
           <img
