@@ -40,6 +40,7 @@
     "react-helmet": "^5.2.0",
     "react-i18next": "^10.5.1",
     "react-router5": "^7.1.0",
+    "react-spinners": "^0.5.3",
     "router5": "^7.0.2",
     "router5-plugin-browser": "^7.0.2",
     "router5-plugin-listeners": "^7.0.2",
@@ -49,7 +50,8 @@
   "babel": {
     "plugins": [
       "lodash",
-      "@babel/plugin-transform-runtime"
+      "@babel/plugin-transform-runtime",
+      "emotion"
     ]
   },
   "compress": {

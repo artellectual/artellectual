@@ -3,8 +3,18 @@ import { FunctionComponent } from 'react'
 import { RouteNode } from 'react-router5'
 import { lazy, Suspense } from 'react'
 
+import { GridLoader } from 'react-spinners'
+
 import { constants, State } from 'router5'
 import { RouteProps } from 'typings/route'
+
+const Loader: FunctionComponent = () => {
+  return (
+    <div className='flex container mx-auto p-20 justify-center'>
+      <GridLoader color='#fff' />
+    </div>
+  )
+}
 
 interface PagesIndex {
   [key: string]: React.LazyExoticComponent<any>
@@ -29,7 +39,7 @@ const PageComponent: FunctionComponent<RouteProps> = (props: {
   const Page = pages[page]
 
   return (
-    <Suspense fallback='Loading...'>
+    <Suspense fallback={<Loader />}>
       <Page {...props} />
     </Suspense>
   )
