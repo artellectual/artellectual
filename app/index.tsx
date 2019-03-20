@@ -5,7 +5,6 @@ import { RouterProvider } from 'react-router5'
 import createRouter from './router'
 
 import './i18n'
-import '@fortawesome/fontawesome-free/js/all.js'
 
 import { Application } from './layout'
 
