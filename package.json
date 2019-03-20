@@ -62,6 +62,9 @@
       "blocksplitting": true,
       "blocksplittinglast": false,
       "blocksplittingmax": 15
+    },
+    "brotli": {
+      "enable": false
     }
   }
 }
