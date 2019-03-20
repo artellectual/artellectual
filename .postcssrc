@@ -7,6 +7,6 @@
     "autoprefixer": { 
       "grid": true 
     },
-    "tailwindcss": "./tailwind.js"
+    "tailwindcss": "./tailwind.ts"
   }
 }
