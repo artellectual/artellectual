@@ -1,0 +1,13 @@
+dependencies:
+  build:
+    - nodejs
+    - npm
+  runtime:
+    - nginx
+    - bash
+    - curl
+    - s6
+    - artellectual-openrc
+build: |
+  yarn install
+  yarn run build

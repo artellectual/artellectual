@@ -1,0 +1,36 @@
+name: 'Deploy'
+
+on:
+  push:
+    branhces:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v1
+      - name: 'Pakman'
+        uses: upmaru/pakman@develop
+        with:
+          command: 'bootstrap'
+        env:
+          ABUILD_PRIVATE_KEY: ${{secrets.ABUILD_PRIVATE_KEY}}
+          ABUILD_PUBLIC_KEY: ${{secrets.ABUILD_PUBLIC_KEY}}
+      - name: 'Build APK'
+        uses: upmaru/pakman@develop
+        with:
+          entrypoint: /var/lib/pakman/bin/build.sh
+      - name: 'Archive'
+        uses: juankaram/archive-action@v1.0.0
+        with:
+          args: zip -r packages.zip /github/home/packages
+      - name: 'Create Deployment'
+        uses: upmaru/pakman@develop
+        with:
+          command: 'create_deployment'
+          archive: 'packages.zip'
+        env:
+          INSTELLAR_PACKAGE_TOKEN: ${{secrets.INSTELLAR_PACKAGE_TOKEN}}
+          INSTELLAR_AUTH_TOKEN: ${{secrets.INSTELLAR_AUTH_TOKEN}}
