@@ -9,6 +9,8 @@ dependencies:
     - curl
     - s6
     - artellectual-openrc
-build: |
-  yarn install
-  yarn run build
+build:
+  commands: |
+    yarn install
+    yarn run build
+  destination: 'dist'
