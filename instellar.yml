@@ -1,14 +1,12 @@
+type: static
 dependencies:
   build:
     - yarn
     - nodejs
     - npm
   runtime:
-    - nginx
     - bash
     - curl
-    - s6
-    - artellectual-openrc
 build:
   destination: 'dist'
   command: |
