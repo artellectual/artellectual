@@ -11,6 +11,6 @@ dependencies:
     - artellectual-openrc
 build:
   destination: 'dist'
-  commands: |
+  command: |
     yarn install
     yarn run build
