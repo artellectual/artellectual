@@ -1,6 +1,7 @@
 type: static
 dependencies:
   build:
+    - python2
     - yarn
     - nodejs
     - npm
